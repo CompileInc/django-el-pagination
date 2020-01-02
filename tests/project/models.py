@@ -1,6 +1,5 @@
 
 from django.db import models
-from django.utils.encoding import python_2_unicode_compatible
 
 
 def make_model_instances(number):
@@ -10,7 +9,6 @@ def make_model_instances(number):
     return TestModel.objects.all().order_by('pk')
 
 
-@python_2_unicode_compatible
 class TestModel(models.Model):
     """A model used in tests."""
 

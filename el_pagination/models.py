@@ -5,7 +5,7 @@ from django.template import (
     loader,
     Context,
 )
-from django.utils.encoding import iri_to_uri, python_2_unicode_compatible, force_text
+from django.utils.encoding import iri_to_uri, force_text
 
 from el_pagination import (
     loaders,
@@ -83,7 +83,6 @@ class ELPage(object):
             return template.render(self.context.flatten())
 
 
-python_2_unicode_compatible
 class PageList(object):
     """A sequence of endless pages."""
 
